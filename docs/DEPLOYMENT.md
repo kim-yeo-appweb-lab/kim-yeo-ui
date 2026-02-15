@@ -7,7 +7,7 @@
 ### 1. CI (Pull Request 검증)
 
 **트리거:** PR 생성/업데이트 시
-**워크플로우:** `.github/workflows/ci.yml`
+**워크플로우:** `.github/workflows/ci.yaml`
 
 ```
 Type Check → Lint → Format Check → Build → Test
@@ -18,7 +18,7 @@ Type Check → Lint → Format Check → Build → Test
 ### 2. npm 배포 (Release)
 
 **트리거:** `main` 브랜치에 코드 push 시
-**워크플로우:** `.github/workflows/release.yml`
+**워크플로우:** `.github/workflows/release.yaml`
 
 Changesets 기반 자동 배포:
 
@@ -28,7 +28,7 @@ Changesets 기반 자동 배포:
 ### 3. Storybook 문서 배포
 
 **트리거:** `main` 브랜치에 코드 push 시
-**워크플로우:** `.github/workflows/storybook.yml`
+**워크플로우:** `.github/workflows/storybook.yaml`
 
 GitHub Pages에 Storybook 자동 배포:
 
