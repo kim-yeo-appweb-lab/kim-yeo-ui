@@ -66,6 +66,9 @@ importers:
       concurrently:
         specifier: ^9.2.1
         version: 9.2.1
+      esbuild-plugin-preserve-directives:
+        specifier: ^0.0.11
+        version: 0.0.11(esbuild@0.27.3)
       eslint:
         specifier: ^9
         version: 9.39.2(jiti@2.6.1)
@@ -1423,6 +1426,12 @@ packages:
 
   es-module-lexer@1.7.0:
     resolution: {integrity: sha512-jEQoCwk8hyb2AZziIOLhDqpm5+2ww5uIE6lkO/6jcOCusfk6LhMHpXXfBLXTZ7Ydyt0j4VoUQv6uGNYbdW+kBA==}
+
+  esbuild-plugin-preserve-directives@0.0.11:
+    resolution: {integrity: sha512-OolFhx1h/1ADEEoPjVi0hYWru1pTZBHki7XozawYVkhRhO63mwZT6isLylbwPs7dJ72doVQJGHCT2I1l9z8DcA==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      esbuild: ^0.21.0
 
   esbuild@0.27.3:
     resolution: {integrity: sha512-8VwMnyGCONIs6cWue2IdpHxHnAjzxnw2Zr7MkVxB2vjmQ2ivqGFb4LEG3SMnv0Gb2F/G/2yA8zUaiL1gywDCCg==}
@@ -4202,6 +4211,10 @@ snapshots:
   entities@6.0.1: {}
 
   es-module-lexer@1.7.0: {}
+
+  esbuild-plugin-preserve-directives@0.0.11(esbuild@0.27.3):
+    dependencies:
+      esbuild: 0.27.3
 
   esbuild@0.27.3:
     optionalDependencies:
