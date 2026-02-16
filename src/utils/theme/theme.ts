@@ -17,5 +17,10 @@ export function getSystemTheme(): "light" | "dark" {
 
 export function getResolvedTheme(storedTheme?: Theme | null): "light" | "dark" {
 	const theme = storedTheme ?? getStoredTheme() ?? "system";
-	return theme === "system" ? getSystemTheme() : theme;
+	if (theme === "system") {
+		if (typeof window === "undefined") return "light";
+		return getSystemTheme();
+	}
+
+	return theme;
 }
