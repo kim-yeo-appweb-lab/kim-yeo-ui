@@ -1,5 +1,13 @@
 # @kim-yeo-appweb-lab/ui
 
+## 1.1.2
+
+### Patch Changes
+
+- [#12](https://github.com/kim-yeo-appweb-lab/kim-yeo-appweb-lab-ui/pull/12) [`2246d55`](https://github.com/kim-yeo-appweb-lab/kim-yeo-appweb-lab-ui/commit/2246d55a5da4c85bc9f27245bfc68dc33197f2bf) Thanks [@chan9yu](https://github.com/chan9yu)! - SSR 호환성 강화 및 다크 모드 토큰 누락 수정
+  - `getSystemTheme()`, `setStoredTheme()` SSR 가드 추가 (Next.js 프리렌더링 호환)
+  - 다크 모드에서 `--color-ring` 토큰 누락 수정 (포커스 링 가시성 보장)
+
 ## 1.1.1
 
 ### Patch Changes
