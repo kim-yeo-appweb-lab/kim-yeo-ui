@@ -22,6 +22,10 @@ const config: StorybookConfig = {
 	],
 	framework: "@storybook/react-vite",
 	viteFinal: async (config) => {
+		// GitHub Pages base path 설정 (production 환경에서만)
+		if (process.env.NODE_ENV === "production") {
+			config.base = "/kim-yeo-ui/";
+		}
 		config.plugins = [...(config.plugins ?? []), tailwindcss()];
 		return config;
 	}
