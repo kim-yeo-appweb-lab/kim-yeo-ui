@@ -46,14 +46,14 @@ export const WithLink: Story = {
 export const WithChildren: Story = {
 	render: (args) => (
 		<SectionHeader {...args} title="새 소식" href="/news">
-			<Badge colorScheme="blue">신규</Badge>
+			<Badge colorScheme="info">신규</Badge>
 		</SectionHeader>
 	),
 	parameters: {
 		docs: {
 			source: {
 				code: `<SectionHeader title="새 소식" href="/news">
-  <Badge colorScheme="blue">신규</Badge>
+  <Badge colorScheme="info">신규</Badge>
 </SectionHeader>`
 			}
 		}
